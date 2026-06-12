@@ -8,12 +8,15 @@
   line-height: 150%;
   color: #573a37;
 }
+
 body {
   background-image: url(assets/bg-image.jpg);
   background-size: cover;
 }
 
 #page {
+  /* box-sizing: border-box faz com que a largura definida (800px) inclua
+     padding e border, evitando que o elemento fique maior que o esperado. */
   box-sizing: border-box;
   width: 800px;
   padding: 24px;
@@ -31,10 +34,13 @@ main {
 }
 
 section + section {
+  /* Dá espaço entre uma seção e a próxima, como em: <section>...</section> <section>...</section>. */
   margin-top: 24px;
 }
 
 #about p + p {
+  /* Seleciona o segundo parágrafo em diante dentro da seção #about do HTML.
+     Isso cria um espaço entre os parágrafos da descrição da receita. */
   margin-top: 12px;
 }
 
